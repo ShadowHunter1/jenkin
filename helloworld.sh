@@ -1,3 +1,3 @@
 #!/bin/bash
 echo from jenkin with love
-echo auto run
+echo auto
