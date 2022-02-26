@@ -12,7 +12,7 @@ pipeline {
             }
             steps {
                 echo 'this is build step'
-                echo $APP_NAME
+                echo "this is ${APP_NAME} app"
             }
         }
         stage("test"){
