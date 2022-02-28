@@ -17,7 +17,7 @@ pipeline {
         }
         stage("test"){
             steps {
-                echo 'this is test step ${APP_NAME}'
+                echo "this is test step ${APP_NAME}"
             }
         }
     }
