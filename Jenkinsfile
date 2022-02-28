@@ -25,7 +25,7 @@ pipeline {
         stage("test"){
             steps {
                 echo "this is test step ${APP_NAME}"
-                echo "this is my_text pararm ${pararms.my_text}"
+                echo "this is my_text pararm ${params.my_text}"
             }
         }
     }
