@@ -22,12 +22,18 @@ pipeline {
             parallel {
                 stage('build a'){
                     steps {
-                        echo "build aaaaaaa "
+                        script {
+                            def cur_date = new Date()   
+                        }
+                        echo "build aaaaaaa at ${cur_date}"
                     }
                 }
                 stage('build b'){
                     steps {
-                        echo "build b"
+                        script {
+                            def cur_date = new Date()   
+                        }
+                        echo "build bbbbbbbbbbb at ${cur_date}"
                     }
                 }
             }
