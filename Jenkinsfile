@@ -13,9 +13,22 @@ pipeline {
     }
     stages {
         stage("build"){
+            
             when {
                 expression {
                     BRANCH_NAME == 'develop'   
+                }
+            }
+            parallel {
+                stage('build a'){
+                    steps {
+                        echo "build aaaaaaa at $(date)"
+                    }
+                }
+                stage('build b'){
+                    steps {
+                        echo "build b at $(date)"
+                    }
                 }
             }
             steps {
