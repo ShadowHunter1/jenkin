@@ -16,7 +16,7 @@ pipeline {
             
             when {
                 expression {
-                    BRANCH_NAME == 'develop'   
+                    BRANCH_NAME == 'main'   
                 }
             }
             parallel {
