@@ -22,12 +22,12 @@ pipeline {
             parallel {
                 stage('build a'){
                     steps {
-                        echo "build aaaaaaa at $(date)"
+                        echo "build aaaaaaa "
                     }
                 }
                 stage('build b'){
                     steps {
-                        echo "build b at $(date)"
+                        echo "build b"
                     }
                 }
             }
