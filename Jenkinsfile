@@ -31,10 +31,6 @@ pipeline {
                     }
                 }
             }
-            steps {
-                echo 'this is build step'
-                echo "this is ${APP_NAME} app"
-            }
         }
         stage("test"){
             steps {
