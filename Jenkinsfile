@@ -23,17 +23,17 @@ pipeline {
                 stage('build a'){
                     steps {
                         script {
-                            def cur_date = new Date()   
+                            def cur_date = new Date()
+                            println("build aaaa at ${cur_date}")
                         }
-                        echo "build aaaaaaa at ${cur_date}"
                     }
                 }
                 stage('build b'){
                     steps {
                         script {
                             def cur_date = new Date()   
+                            println("build bbbb at ${cur_date}")
                         }
-                        echo "build bbbbbbbbbbb at ${cur_date}"
                     }
                 }
             }
